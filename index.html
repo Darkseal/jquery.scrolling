@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Jquery.scrollIntoView : jQuery plugin for tracking element&#39;s appearance in browser viewport (Page, Frame or IFrame)">
+    <meta name="description" content="Jquery.scrolling : jQuery plugin for tracking element&#39;s appearance in browser viewport (Page, Frame or IFrame)">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Jquery.scrollIntoView</title>
+    <title>Jquery.scrolling</title>
   </head>
 
   <body>
@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Darkseal/jquery.scrollIntoView">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/Darkseal/jquery.scrolling">View on GitHub</a>
 
-          <h1 id="project_title">Jquery.scrollIntoView</h1>
+          <h1 id="project_title">Jquery.scrolling</h1>
           <h2 id="project_tagline">jQuery plugin for tracking element&#39;s appearance in browser viewport (Page, Frame or IFrame)</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Darkseal/jquery.scrollIntoView/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Darkseal/jquery.scrollIntoView/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/Darkseal/jquery.scrolling/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Darkseal/jquery.scrolling/tarball/master">Download this project as a tar.gz file</a>
             </section>
         </header>
     </div>
@@ -32,9 +32,9 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a id="user-content-jqueryscrollintoview" class="anchor" href="#jqueryscrollintoview" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.scrollIntoView</h1>
+<a id="user-content-jqueryscrolling" class="anchor" href="#jqueryscrolling" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.scrolling</h1>
 
-<p>This plugin adds the <em>scrollIn</em> and <em>scrollOut</em> events to jquery: these events will fire when any given element becomes visible/invisible in the browser viewport, allowing you to:</p>
+<p>This plugin adds the <em>scrollin</em> and <em>scrollout</em> events to jquery: these events will fire when any given element becomes visible/invisible in the browser viewport, allowing you to:</p>
 
 <ul class="task-list">
 <li>automatically or programmatically show/hide any HTML content as soon as it comes inside or outside the browser viewport (i.e. when the user scrolls to them).</li>
@@ -51,37 +51,37 @@
 <h1>
 <a id="user-content-home-page" class="anchor" href="#home-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Home Page</h1>
 
-<p>For the latest package, documentation, API and support please refer to the project <a href="http://darkseal.github.io/jquery.scrollIntoView/">Home Page</a>.</p>
+<p>For the latest package, documentation, API and support please refer to the project <a href="http://darkseal.github.io/jquery.scrolling/">Home Page</a>.</p>
 
 <h1>
 <a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
 
-<pre><code>    $('selector').scrollIntoView(); 
+<pre><code>    $('selector').scrolling(); 
     // It supports optional hash with "forceProcess" and "interval" keys. 
     // Check source code for details.
 
-    $('&lt;div&gt;content&lt;/div&gt;').scrollIntoView(); 
+    $('&lt;div&gt;content&lt;/div&gt;').scrolling(); 
     // It also supports raw DOM nodes wrapped in jQuery.
 
-    $('selector').on('scrollIn', function(event, $all_elements) {
+    $('selector').on('scrollin', function(event, $all_elements) {
       // triggers when 'selector' element comes inside browser viewport.
       // $all_elements contains all the appeared elements.
     });
 
-    $('yourselector').on('scrollOut', function(event, $all_elements) {
+    $('yourselector').on('scrollout', function(event, $all_elements) {
       // triggers when 'selector' element goes outside browser viewport.
       // $all_elements contains all the disappeared elements.
     });
 </code></pre>
 
-<p>If you want to fire the <em>scrollIn</em> event for elements which are close to viewport but are not visible yet you may either:</p>
+<p>If you want to fire the <em>scrollin</em> event for elements which are close to viewport but are not visible yet you may either:</p>
 
 <ul class="task-list">
 <li>use the offsetTop and offsetLeft <em>options</em> properties during initialization.</li>
 <li>
 <p>add the following custom data attributes <em>offset-top</em> and <em>offset-left</em> to DOM nodes.</p>
 
-<pre><code>$('#myEl').scrollIntoView({ offsetTop: 100 }); 
+<pre><code>$('#myEl').scrolling({ offsetTop: 100 }); 
 // appear will be fired when "myEl" is 100 or less pixels
 // below browser viewport 
 </code></pre>
@@ -94,17 +94,17 @@
     // same as above using data attributes.
 </code></pre>
 
-<p>Appear check can also be forced by calling <em>$.forceScrollIn()</em>. This is suitable in cases when page is in initial state (not scrolled and not resized) and when you want manually trigger appearance check.</p>
+<p>Appear check can also be forced by calling <em>$.checkScrolling()</em>. This is suitable in cases when page is in initial state (not scrolled and not resized) and when you want manually trigger appearance check.</p>
 
-<p>There's also a custom <em>inView</em> jQuery filter you can use for manual checking if the element is in view or not.</p>
+<p>There's also a custom <em>:scrollin</em> jQuery filter you can use for manual checking if the element is in view or not.</p>
 
-<pre><code>    $('selector').is(':inView')
+<pre><code>    $('selector').is(':scrollin')
 </code></pre>
 
 <h1>
 <a id="user-content-demo-and-examples" class="anchor" href="#demo-and-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo and Examples</h1>
 
-<p>Check the project <a href="http://darkseal.github.io/jquery.appear/demo.html">demo page</a> to see the most common implementation scenarios.</p>
+<p>Check the project <a href="http://darkseal.github.io/jquery.scrolling/demo.html">demo page</a> to see the most common implementation scenarios.</p>
 
 <h1>
 <a id="user-content-credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h1>
@@ -158,7 +158,7 @@ OTHER DEALINGS IN THE SOFTWARE.</p>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Jquery.appear maintained by <a href="https://github.com/Darkseal">Darkseal</a></p>
+        <p class="copyright">Jquery.scrolling maintained by <a href="https://github.com/Darkseal">Darkseal</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
