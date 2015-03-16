@@ -1,6 +1,6 @@
 {
   "name": "jquery_scrollIntoView",
-  "version": "0.1.20150316",
+  "version": "0.1.20150317",
   "main": "jquery.scrolling.js",
   "license": "MIT",
   "ignore": [

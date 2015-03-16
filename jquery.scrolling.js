@@ -1,7 +1,7 @@
 /*
  * jquery.scrollIntoView
  *
- * Version: 0.1.20150316
+ * Version: 0.1.20150317
  *
  * Copyright (c) 2015 Darkseal/Ryadel
  * based on the work of Andrey Sidorov

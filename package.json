@@ -1,26 +1,30 @@
 {
-  "name": "jquery.scrollIntoView",
-  "title": "jQuery ScrollIntoView",
+  "name": "jquery.scrolling",
+  "title": "jQuery Scrolling",
   "description": "A lightweight jQuery plugin for detecting Viewport scrolling. It implements a custom 'scrollin'/'scrollout' events which are fired when an element come inside / goes outside the browser viewport.",
   "keywords": [
+    "jquery-plugin",
+	"ecosystem:jquery",
     "event",
 	"scrolling",
-	"scroll"
+	"scroll",
 	"scrollin",
 	"scrollout",
     "appear",
-    "disappear"
+    "disappear",
+	"jquery",
+	"plugin"
   ],
-  "version": "0.1.20150316",
+  "version": "0.1.20150317",
   "author": {
-    "name": "Valerio De Sanctis",
+    "name": "Darkseal",
     "email" : "web@ryadel.com",
     "url": "https://github.com/darkseal/jquery.scrolling/blob/master/AUTHORS.txt"
   },
   "maintainers": [
     {
     "name": "Darkseal",
-    "email" : "web@ryadel.com",
+    "email" : "web@ryadel.com"
     }
   ],
   "licenses": [
