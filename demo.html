@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Jquery.scrollIntoView : jQuery plugin for tracking element&#39;s appearance or disappearance in browser viewport (Page, Frame or IFrame)">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/Darkseal/jquery.scrollIntoView/master/jquery.scrollIntoView.js"></script>
+
+    <title>Jquery.scrollIntoView - Demo and Examples</title>
+	<style type="text/css">
+		.example { padding: 10px; margin: 10px; border: 2px solid #444; background-color: #d9f5ff; text-align: center; font-size: 1.1em; }
+		h2 { margin-top: 30px; }
+	</style>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Darkseal/jquery.scrollIntoView">View on GitHub</a>
+
+          <h1 id="project_title">Jquery.scrollIntoView</h1>
+          <h2 id="project_tagline">Demo and Examples page</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Darkseal/jquery.scrollIntoView/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Darkseal/jquery.scrollIntoView/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="jqueryscrollIntoView" class="anchor" href="#jqueryscrollIntoView" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo and Examples</h1>
+
+<p>The following samples show the most common usages of the <a href="https://darkseal.github.io/jquery.scrollIntoView/">jquery.scrollIntoView</a> plugin.</p>
+
+<h2><a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Basic Show/Hide</h2>
+The trigger will fire when the element top is inside the viewport scrolling area.
+<h3>Code:</h3>
+<pre><code>    
+&lt;script type="text/javascript"&gt;
+	$(function() {
+		$('#demo01').scrollIntoView(); 
+		
+		$('#demo01').on('scrollIn', function(event, $all_elements) {
+		  $(this).animate({opacity: 1}, 600);
+		});
+
+		$('#demo01').on('scrollOut', function(event, $all_elements) {
+		  $(this).animate({opacity: 0}, 200);
+		});
+    });
+&lt;/script&gt;
+&lt;div id="demo01" class="example"&gt;
+	Scroll-in and scroll-out this content to trigger each event.
+	This element will lose and gain opacity accordingly.
+&lt;/div&gt;
+</code></pre>
+<h3>Result:</h3>
+<script type="text/javascript">
+	$(function() {
+		$('#demo01').scrollIntoView(); 
+		
+		$('#demo01').on('scrollIn', function(event, $all_elements) {
+  		  console.log("demo01 scrollIn");
+		  $(this).animate({opacity: 1}, 600);
+		});
+
+		$('#demo01').on('scrollOut', function(event, $all_elements) {
+  		  console.log("demo01 scrollOut");
+		  $(this).animate({opacity: 0}, 200);
+		});
+	});
+</script>
+<div id="demo01" class="example">
+Scroll-in and scroll-out this content to trigger each event.
+<br />
+This element will lose and gain opacity accordingly.
+</div>
+
+
+
+<h2><a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Show/Hide with offsets</h2>
+Same as above with a negative offset of 200px. 
+The trigger will fire when the element top is 200px inside the viewport scrolling area.
+<h3>Code:</h3>
+<pre><code>    
+&lt;script type="text/javascript"&gt;
+	$(function() {
+		$('#demo02').scrollIntoView({ offsetTop: -200 }); 
+		
+		$('#demo02').on('scrollIn', function(event, $all_elements) {
+		  $(this).animate({opacity: 1}, 600);
+		});
+
+		$('#demo02').on('scrollOut', function(event, $all_elements) {
+		  $(this).animate({opacity: 0}, 200);
+		});
+    });
+&lt;/script&gt;
+&lt;div id="demo02" class="example"&gt;
+	Scroll-in and scroll-out this content to trigger each event.
+	This element will lose and gain opacity accordingly.
+&lt;/div&gt;
+</code></pre>
+<h3>Result:</h3>
+<script type="text/javascript">
+	$(function() {
+		$('#demo02').scrollIntoView({ offsetTop: -200 }); 
+		
+		$('#demo02').on('scrollIn', function(event, $all_elements) {
+  		  console.log("demo02 scrollIn");
+		  $(this).animate({opacity: 1}, 600);
+		});
+
+		$('#demo02').on('scrollOut', function(event, $all_elements) {
+  		  console.log("demo02 scrollOut");
+		  $(this).animate({opacity: 0}, 200);
+		});
+	});
+</script>
+<div id="demo02" class="example">
+Scroll-in and scroll-out this content to trigger each event.
+<br />
+This element will lose and gain opacity accordingly.
+</div>
+
+<h2><a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. To-do</h2>
+More to come!
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery.scrollIntoView maintained by <a href="https://github.com/Darkseal">Darkseal</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-55895187-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
