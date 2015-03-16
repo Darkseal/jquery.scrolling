@@ -1,0 +1,38 @@
+{
+  "name": "jquery.scrollIntoView",
+  "title": "jQuery ScrollIntoView",
+  "description": "It implements a custom 'scrollin'/'scrollout' events which are fired when an element come inside / goes outside the browser viewport.",
+  "keywords": [
+    "event",
+	"scrolling",
+	"scroll"
+	"scrollin",
+	"scrollout",
+    "appear",
+    "disappear"
+  ],
+  "version": "0.1.20150316",
+  "author": {
+    "name": "Valerio De Sanctis",
+    "email" : "web@ryadel.com",
+    "url": "https://github.com/darkseal/jquery.scrolling/blob/master/AUTHORS.txt"
+  },
+  "maintainers": [
+    {
+    "name": "Darkseal",
+    "email" : "web@ryadel.com",
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "homepage": "https://github.com/darkseal/jquery.scrolling",
+  "demo": "http://darkseal.github.io/jquery.scrolling/demo.html",
+  "issues": "https://github.com/darkseal/jquery.scrolling/issues",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
