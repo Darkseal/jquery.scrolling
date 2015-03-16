@@ -1,6 +1,6 @@
 # jQuery.scrolling
 
-This plugin adds the *scrollIn* and *scrollOut* events to jquery: these events will fire when any given element becomes visible/invisible in the browser viewport, allowing you to:
+This plugin adds the *scrollin* and *scrollout* events to jquery: these events will fire when any given element becomes visible/invisible in the browser viewport, allowing you to:
 
 - automatically or programmatically show/hide any HTML content as soon as it comes inside or outside the browser viewport (i.e. when the user scrolls to them).
 - prevent unnecessary processing for content that is hidden or is outside of the browser viewport.
