@@ -66,11 +66,10 @@
 <a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
 
 <pre><code>    $('selector').scrolling(); 
-    // It supports optional hash with "forceProcess" and "interval" keys. 
-    // Check source code for details.
+    // Activate the events for one or more elements defined by the given selector
 
     $('&lt;div&gt;content&lt;/div&gt;').scrolling(); 
-    // It also supports raw DOM nodes wrapped in jQuery.
+    // Activate the events for raw DOM nodes wrapped in jQuery.
 
     $('selector').on('scrollin', function(event, $all_elements) {
       // triggers when 'selector' element comes inside browser viewport.
