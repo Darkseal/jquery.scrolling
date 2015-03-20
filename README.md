@@ -27,11 +27,11 @@ Installing the plugin is easy: all you need to do is download the latest version
 
 # Usage
 
-You can activate the events for one or more elements defined by the given selector:
+Activate the plugin for one or more elements defined by a selector:
 
         $('selector').scrolling(); 
 
-Or you can activate the evnets for raw DOM nodes created using the standard jQuery syntax:
+Or for raw DOM nodes created using the standard jQuery syntax:
 
         $('<div>content</div>').scrolling(); 
         
