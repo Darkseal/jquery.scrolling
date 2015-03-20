@@ -18,6 +18,13 @@ Requires jQuery 1.7 or above.
 For the latest package, documentation, API and support please refer to the project <a href="http://darkseal.github.io/jquery.scrolling/">Home Page</a>.
 
 
+# Installation
+
+Installing the plugin is easy: all you need to do is download the latest version from the official project page (<a href="https://github.com/Darkseal/jquery.scrolling/tarball/master">tar</a> or <a href="https://github.com/Darkseal/jquery.scrolling/zipball/master">zip</a>): unpack the archive somewhere, copy the .js file in your website javascript folder and add the following line to the *head* block of your web page:
+
+        <script type="text/javascript" src="/yourpath/jquery.scrolling.js"></script>
+
+
 # Usage
 
         $('selector').scrolling(); 
