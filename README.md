@@ -27,19 +27,23 @@ Installing the plugin is easy: all you need to do is download the latest version
 
 # Usage
 
+You can activate the events for one or more elements defined by the given selector:
+
         $('selector').scrolling(); 
-        // Activate the events for one or more elements defined by the given selector
+
+Or you can activate the evnets for raw DOM nodes created using the standard jQuery syntax:
 
         $('<div>content</div>').scrolling(); 
-        // Activate the events for raw DOM nodes wrapped in jQuery.
+        
+Once activated, you can bind your code to the *scrollin* and *scrollout* methods: they will trigger when the active element(s) will come inside the browser viewport.
 
         $('selector').on('scrollin', function(event, $all_elements) {
-          // triggers when 'selector' element comes inside browser viewport.
+          // we reach this point as soon as the 'selector' element becomes visibile inside the browser viewport.
           // $all_elements contains all the appeared elements.
         });
         
         $('yourselector').on('scrollout', function(event, $all_elements) {
-          // triggers when 'selector' element goes outside browser viewport.
+          // we reach this point as soon as the 'selector' element goes outside the browser viewport.
           // $all_elements contains all the disappeared elements.
         });
 
