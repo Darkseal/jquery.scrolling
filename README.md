@@ -28,11 +28,10 @@ Installing the plugin is easy: all you need to do is download the latest version
 # Usage
 
         $('selector').scrolling(); 
-        // It supports optional hash with "checkScrolling" and "interval" keys. 
-        // Check source code for details.
+        // Activate the events for one or more elements defined by the given selector
 
         $('<div>content</div>').scrolling(); 
-        // It also supports raw DOM nodes wrapped in jQuery.
+        // Activate the events for raw DOM nodes wrapped in jQuery.
 
         $('selector').on('scrollin', function(event, $all_elements) {
           // triggers when 'selector' element comes inside browser viewport.
