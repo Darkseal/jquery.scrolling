@@ -77,7 +77,7 @@ Check the project <a href="http://darkseal.github.io/jquery.scrolling/demo.html"
 - <a href="http://darkseal.github.io/jquery.scrolling/" target="_blank">Project Home Page</a>, where you can dowload the latest version.
 - <a href="https://github.com/Darkseal/jquery.scrolling" target="_blank">GitHub repository</a>, where you can review the source code and/or fork it to your needs.
 - <a href="https://www.npmjs.com/package/jquery.scrolling" target="_blank">jquery.scrolling official page</a> on NPM.org, the node.js repository of most jQuery plugins.
-- <a href="http://www.ryadel.com/works/jquery-scrolling/" target="_blank">jquery.scrolling project page</a> on this website.
+- <a href="http://www.ryadel.com/works/jquery-scrolling/" target="_blank">jquery.scrolling project page</a> on the author website.
 
 
 # Credits
