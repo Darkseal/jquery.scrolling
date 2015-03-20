@@ -72,7 +72,7 @@ There's also a custom *scrollin* jQuery filter you can use for manual checking i
 Check the project <a href="http://darkseal.github.io/jquery.scrolling/demo.html">demo page</a> to see the most common implementation scenarios.
 
 
-# Other resources
+# Related links
 
 - <a href="http://darkseal.github.io/jquery.scrolling/" target="_blank">Project Home Page</a>, where you can dowload the latest version.
 - <a href="https://github.com/Darkseal/jquery.scrolling" target="_blank">GitHub repository</a>, where you can review the source code and/or fork it to your needs.
