@@ -35,7 +35,7 @@ Or for raw DOM nodes created using the standard jQuery syntax:
 
         $('<div>content</div>').scrolling(); 
         
-Once activated, you can bind your code to the *scrollin* and *scrollout* methods: they will trigger when the active element(s) will come inside the browser viewport.
+Once activated, you can bind your code to the *scrollin* and *scrollout* events: they will trigger when the active element(s) will come inside the browser viewport.
 
         $('selector').on('scrollin', function(event, $all_elements) {
           // we reach this point as soon as the 'selector' element becomes visibile inside the browser viewport.
