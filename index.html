@@ -78,12 +78,14 @@
 <p>Once activated, you can bind your code to the <em>scrollin</em> and <em>scrollout</em> methods: they will trigger when the active element(s) will come inside the browser viewport.</p>
 
 <pre><code>    $('selector').on('scrollin', function(event, $all_elements) {
-      // we reach this point as soon as the 'selector' element becomes visibile inside the browser viewport.
+      // we reach this point as soon as the 'selector' element 
+      //   becomes visibile inside the browser viewport.
       // $all_elements contains all the appeared elements.
     });
 
     $('yourselector').on('scrollout', function(event, $all_elements) {
-      // we reach this point as soon as the 'selector' element goes outside the browser viewport.
+      // we reach this point as soon as the 'selector' element 
+      //   goes outside the browser viewport.
       // $all_elements contains all the disappeared elements.
     });
 </code></pre>
