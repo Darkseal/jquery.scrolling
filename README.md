@@ -94,6 +94,12 @@ The original code has been rewritten and updated in order to support additional 
 - additional samples
 and more.
 
+# Support
+You can support this project's development by clicking on the following button.
+  
+[<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" alt="Donate">](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F576E73P5X526)
+  
+Thanks a lot!
 
 # License
 
