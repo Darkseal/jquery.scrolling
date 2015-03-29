@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Jquery.scrolling : jQuery plugin for tracking element&#39;s appearance in browser viewport (Page, Frame or IFrame)">
+    <meta name="description" content="Jquery.appear : jQuery plugin for tracking element&#39;s appearance in browser viewport (Page, Frame or IFrame)">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>jQuery.scrolling</title>
+    <title>Jquery.appear</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/Darkseal/jquery.scrolling">View on GitHub</a>
 
-          <h1 id="project_title">jQuery.scrolling</h1>
+          <h1 id="project_title">Jquery.appear</h1>
           <h2 id="project_tagline">jQuery plugin for tracking element&#39;s appearance in browser viewport (Page, Frame or IFrame)</h2>
 
             <section id="downloads">
@@ -32,11 +32,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a id="user-content-jqueryscrolling" class="anchor" href="#jqueryscrolling" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.scrolling</h1>
+<a id="jqueryscrolling" class="anchor" href="#jqueryscrolling" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery.scrolling</h1>
 
 <p>This plugin adds the <em>scrollin</em> and <em>scrollout</em> events to jquery: these events will fire when any given element becomes visible/invisible in the browser viewport, allowing you to:</p>
 
-<ul class="task-list">
+<ul>
 <li>automatically or programmatically show/hide any HTML content as soon as it comes inside or outside the browser viewport (i.e. when the user scrolls to them).</li>
 <li>prevent unnecessary processing for content that is hidden or is outside of the browser viewport.</li>
 <li>trigger a custom function or behaviour (such as loading external AJAX content) when a certain point of the page is reached.</li>
@@ -49,21 +49,20 @@
 <p>Requires jQuery 1.7 or above.</p>
 
 <h1>
-<a id="user-content-home-page" class="anchor" href="#home-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Home Page</h1>
+<a id="home-page" class="anchor" href="#home-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Home Page</h1>
 
 <p>For the latest package, documentation, API and support please refer to the project <a href="http://darkseal.github.io/jquery.scrolling/">Home Page</a>.</p>
 
 <h1>
-<a id="user-content-usage" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
 
-<p>Installing the plugin is easy: all you need to do is download the latest version from the official project page (<a href="https://github.com/Darkseal/jquery.scrolling/tarball/master">tar</a> or <a href="https://github.com/Darkseal/jquery.scrolling/zipball/master">zip</a>): unpack the archive somewhere, copy the .js file in your website javascript folder and add the following line to the <em>head</em> block of your web page:
-</p>
+<p>Installing the plugin is easy: all you need to do is download the latest version from the official project page (<a href="https://github.com/Darkseal/jquery.scrolling/tarball/master">tar</a> or <a href="https://github.com/Darkseal/jquery.scrolling/zipball/master">zip</a>): unpack the archive somewhere, copy the .js file in your website javascript folder and add the following line to the <em>head</em> block of your web page:</p>
 
 <pre><code>    &lt;script type="text/javascript" src="/yourpath/jquery.scrolling.js"&gt;&lt;/script&gt;
 </code></pre>
 
 <h1>
-<a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
 
 <p>Activate the plugin for one or more elements defined by a selector:</p>
 
@@ -78,21 +77,19 @@
 <p>Once activated, you can bind your code to the <em>scrollin</em> and <em>scrollout</em> events: they will trigger when the active element(s) will come inside the browser viewport.</p>
 
 <pre><code>    $('selector').on('scrollin', function(event, $all_elements) {
-      // we reach this point as soon as the 'selector' element 
-      //   becomes visibile inside the browser viewport.
+      // we reach this point as soon as the 'selector' element becomes visibile inside the browser viewport.
       // $all_elements contains all the appeared elements.
     });
 
     $('yourselector').on('scrollout', function(event, $all_elements) {
-      // we reach this point as soon as the 'selector' element 
-      //   goes outside the browser viewport.
+      // we reach this point as soon as the 'selector' element goes outside the browser viewport.
       // $all_elements contains all the disappeared elements.
     });
 </code></pre>
 
-<p>If you want to fire the <em>scrollin</em> event for elements which are close to viewport but are not visible yet you may either:</p>
+<p>If you want to fire the <em>scrollIn</em> event for elements which are close to viewport but are not visible yet you may either:</p>
 
-<ul class="task-list">
+<ul>
 <li>use the offsetTop and offsetLeft <em>options</em> properties during initialization.</li>
 <li>
 <p>add the following custom data attributes <em>offset-top</em> and <em>offset-left</em> to DOM nodes.</p>
@@ -112,20 +109,20 @@
 
 <p>Appear check can also be forced by calling <em>$.checkScrolling()</em>. This is suitable in cases when page is in initial state (not scrolled and not resized) and when you want manually trigger appearance check.</p>
 
-<p>There's also a custom <em>:scrollin</em> jQuery filter you can use for manual checking if the element is in view or not.</p>
+<p>There's also a custom <em>scrollin</em> jQuery filter you can use for manual checking if the element is inside the viewport or not.</p>
 
 <pre><code>    $('selector').is(':scrollin')
 </code></pre>
 
 <h1>
-<a id="user-content-demo-and-examples" class="anchor" href="#demo-and-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo and Examples</h1>
+<a id="demo-and-examples" class="anchor" href="#demo-and-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo and Examples</h1>
 
 <p>Check the project <a href="http://darkseal.github.io/jquery.scrolling/demo.html">demo page</a> to see the most common implementation scenarios.</p>
 
 <h1>
-<a id="user-content-related-links" class="anchor" href="#related-links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related links</h1>
+<a id="related-links" class="anchor" href="#related-links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related links</h1>
 
-<ul class="task-list">
+<ul>
 <li>
 <a href="http://darkseal.github.io/jquery.scrolling/" target="_blank">Project Home Page</a>, where you can dowload the latest version.</li>
 <li>
@@ -137,18 +134,18 @@
 </ul>
 
 <h1>
-<a id="user-content-credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h1>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h1>
 
-<p>This is a revamp/upgrade of two jquery.appear plugins respectively hosted on:</p>
+<p>This is a revamp/upgrade of the jquery.appear plugins respectively hosted on:</p>
 
-<ul class="task-list">
+<ul>
 <li><a href="http://code.google.com/p/jquery-appear/">http://code.google.com/p/jquery-appear/</a></li>
 <li><a href="https://github.com/morr/jquery.appear">https://github.com/morr/jquery.appear</a></li>
 </ul>
 
-<p>The original plugins have been partially rewritten and updated in order to support additional features, namely:</p>
+<p>The original code has been rewritten and updated in order to support additional features, namely:</p>
 
-<ul class="task-list">
+<ul>
 <li>IFrame support</li>
 <li>more options</li>
 <li>configurable values</li>
@@ -158,7 +155,16 @@ and more.</li>
 </ul>
 
 <h1>
-<a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h1>
+
+<p>You can support this project's development by clicking on the following button.</p>
+
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F576E73P5X526"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" alt="Donate"></a></p>
+
+<p>Thanks a lot!</p>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h1>
 
 <blockquote>
 <p>Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
@@ -184,12 +190,14 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.</p>
 </blockquote>
+      </section>
+    </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Jquery.scrolling maintained by <a href="https://github.com/Darkseal">Darkseal</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p class="copyright">Jquery.appear maintained by <a href="https://github.com/Darkseal">Darkseal</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
